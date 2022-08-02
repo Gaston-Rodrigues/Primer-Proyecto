@@ -157,7 +157,7 @@ div {
 
 .sepia{
     display: flex;
-    background-image: url(../img/Cancha7.jpg);
+    background-image: url(img/Cancha7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -178,7 +178,7 @@ div {
 /*contacto*/
 
 .fondo{
-    background-image: url(../img/sintetico.jpg);
+    background-image: url(img/sintetico.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -276,7 +276,7 @@ form input{
 
 .entreno {
     display: flex;
-    background-image: url(../img/entreno.png);
+    background-image: url(img/entreno.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -324,7 +324,7 @@ th,td {
 /* Padel*/
 .padel{
     display: flex;
-    background-image:url(../img/padel1.jpg);
+    background-image:url(img/padel1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -350,7 +350,7 @@ img{
 /* Futbol*/
 .futbol{
     display: flex;
-    background-image:url(../img/football.jpg);
+    background-image:url(img/football.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
