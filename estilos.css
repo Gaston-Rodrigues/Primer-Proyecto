@@ -3,72 +3,46 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+}
     /*index*/
-
+ .nav-link{
+    color: white;
+ 
  }
 
-.canchas{
-    background-color: black;
-    width: 100%;
-    height:100%;
-}
+ 
+ .nav-link:hover{
+    color: greenyellow;
 
-h2{
-    width: 100%;
-    margin: right;
-}
-
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 30px;
     font-size: 20px;
-}
-.logo{
-    color: black;
 
+    
+ }
+ .navbar-brand{
+    color: black;
+     height: 100px;
+   
     transition: all 2.5s;
 }
-.logo:hover{
+.navbar-brand:hover{
 transform:scale(0.8,0.8);
 
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 10px, 20px 
-}
+.navbar-toggler{
+    background-color: greenyellow;
 
-li {
-    display: inline-block;
-    padding: 0px 30px;
-
+  
 }
+.navbar-toggler-icon{
+    color: wh;
+    background-color: transparent !important;
 
-nav ul li a{
-    color:white;
-    text-decoration: none;
-    font-weight: bold;
-}
- 
-nav ul li a:hover{
-    color: whitesmoke;
-    transition: 0.3s; 
-    border-radius: 30px; 
-    background: green;
-    font-size: 15px;
-    padding: 5px 10px; 
-    border:none
+
 }
 
 body{
-background-color: rgb(52, 56, 52);
+background-color: rgb(41, 40, 40);
 
 }
 
@@ -105,12 +79,11 @@ div {
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    flex: auto;
-    padding-bottom: 15px;
+
 }
 #grilla-footer{
     padding-top: 15px;
-   width: 100%;
+    width: 100%;
    background-color: black;
      
 }
@@ -187,91 +160,43 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: rgb(14, 13, 13);
     filter: grayscale(100%);
     transition: all 1s;
 }
  .fondo:hover{ filter: grayscale(20%);
 }
 
+.contacto{
+    font-size: 30px;
+    margin-bottom: 90px;
+   
+    color: greenyellow;
+}
+#formulario{
+    padding-top: 100px;
+    padding-left: 10px;
 
-.contactanos-caja{
-
-    font-weight: bolder;
-    width: 180px;
-    height: 550px;
-    margin-top: 30px;
-    background-color: black;
-    border-radius: 4px;
-    color: white;
-    margin-left: 80px;
-    margin-bottom: 20px;
+}
     
-}
-.ubi{
-    
-    justify-content: center;
-    text-align: center;
-    font-size: 35px;
-    padding : 10px;
-    margin-top: 10px;
-    padding: 20px;
-    color: white;
-}
-.container{
-     width: 100%;
-     display: flex;
-      
-}  
-h1{
-    text-align: center;
-    color: white;
-    padding: 15px;
-}
-form{
-    width: 300px;
-    margin-left: 15px;
+
+.form-control{
+    background-color: gray;
+    color: greenyellow;
 }
 
-form label{
-    display: flex;
-    margin-top: 11px;
-    font-size: 16px;
-}
-
-form input{
-    width: 100%;
-    padding: 7px;
-    border: 2px solid grey;
-}
    button
    {
-    width: 220px;
+    width: 100px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 15px;
-    background-color: green;
+    background-color: greenyellow;
     border: none;
     font-size: 15px;
-
    }
-   .maps{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    background-color: rgb(52, 56, 52);
-}
-.ubi{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 30px;
-    background-color: rgb(52, 56, 52);
-}
-
+   
 /* Entrenamiento*/
 
 .entreno {
@@ -338,9 +263,9 @@ th,td {
 
 #grilla-padel{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 90%;
-    grid-template-areas: blindex1 blindex3 blindex4 blindex5; 
+    grid-template-areas: "blindex1 blindex3 blindex4 blindex5"; 
      gap: 5px;
 }
 img{
