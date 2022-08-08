@@ -24,19 +24,29 @@
         grid-area: foto4;
     }
     
-    .medio{
+    .primero{
     display: none;
     background-color: black ;
     }
     
-    #grilla-footer p,a{
-        font-size: 9px;
-    }
+  
     
-    #grilla-footer{
-        margin-top: 30px;
+    .derecha{
+        display: grid;
+        font-size: 15px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 90%;
+        grid-template-areas: "footer1 footer2";
     }
-    
+
+    .direccion{
+        grid-area: footer1;
+    }
+    .redes{
+        grid-area: footer2;
+    }
+
+
     .sepia h1,h2{
         font-size: 30px;
     
