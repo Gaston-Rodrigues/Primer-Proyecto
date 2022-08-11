@@ -1,0 +1,154 @@
+/*grilla index*/
+#grilla{
+    display:grid;
+    gap: 5px;
+    font-size: 20px;
+    padding-bottom: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90%;
+    grid-template-areas:
+    "foto1 foto2 foto3 foto4";
+
+
+.item1{
+    grid-area: foto1;
+    width: 100%;
+    height: 100%
+}
+.item2{
+    grid-area: foto2;
+}
+.item3{
+    grid-area: foto3;
+}
+.item4{
+    grid-area: foto4;
+}
+
+div {
+    background-color: $fondo-color;
+    color: $letras-color;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+}}
+/*grilla footer*/
+
+#grilla-footer{
+    padding-top: 50px;
+    width: 100%;
+    background-color: $fondo-color;
+    font-size: 15px;
+    
+ 
+}
+
+.derecha{ display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 90%;
+    grid-template-areas: 
+    "area1 area2 area3";
+
+}
+
+.primero{
+    grid-area: area1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    filter: grayscale(100%);
+    
+    
+}
+.primero img{
+  
+    width: 35%;
+    height: 60px;
+
+}
+.primero:hover{ filter: grayscale(30%);
+   
+   
+}
+
+.direccion{
+    grid-area: area2;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.redes{
+    grid-area: area3;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+
+.bi-facebook:hover{
+    color: blue;
+}
+
+.bi-whatsapp:hover{
+
+    color: green;
+}
+             
+
+.bi-instagram:hover{
+    color: rgb(194, 22, 122) ;
+}
+.bi-envelope:hover{
+    color: red;
+}
+
+/*grilla padel*/
+#grilla-padel{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 90%;
+    grid-template-areas: "blindex1 blindex3 blindex4 blindex5"; 
+    gap: $espacio-grillas;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.contamos{
+    font-size: 23px;
+}
+
+/*grilla futbol*/
+
+#grilla-futbol{
+    display: grid;
+    gap: $espacio-grillas;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 90% ;
+    grid-template-areas:  "foto1 foto2 foto3 foto4";
+    
+
+.img1{
+    grid-area: foto1;
+}
+.img2{
+    grid-area: foto2;
+}
+.img3{
+    grid-area: foto3;
+}
+.img4{
+    grid-area: foto4;
+}
+img{
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}}

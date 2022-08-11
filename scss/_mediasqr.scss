@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px){
 
     #grilla{
-        gap: 5px;
+        gap: $espacio-grillas;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
@@ -26,8 +26,9 @@
     
     .primero{
     display: none;
-    background-color: black ;
+    background-color: $fondo-color;
     }
+
     
   
     
@@ -46,18 +47,18 @@
         grid-area: footer2;
     }
 
-
+    /*tablas*/
     .sepia h1,h2{
         font-size: 30px;
     
     }
-    th,td{
+    .table th,td{
         font-size: 20px;
     
     }
     #grilla-futbol{
         display: grid;
-        gap: 5px;
+        gap: $espacio-grillas;
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr 1fr ;
         grid-template-areas:  "foto1 foto2"
@@ -88,7 +89,7 @@
 
     #grilla-padel{
         display: grid;
-        gap: 5px;
+        gap: $espacio-grillas;
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr 1fr ;
         grid-template-areas:  "foto1 foto2"

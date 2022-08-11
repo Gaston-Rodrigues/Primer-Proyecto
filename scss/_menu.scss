@@ -1,0 +1,37 @@
+
+
+    .nav-link{
+        
+        color: $letras-color;
+         
+        &:hover{
+        color:  $menu-resaltador;
+
+  
+     }
+     }
+    
+      
+    
+    .container-fluid{
+        font-size: 20px;
+        
+    .navbar-brand{
+        color: $fondo-color;
+         height: 100px;
+        transition: all 2.5s;
+    &:hover{
+       transform:scale(0.8,0.8);
+    
+    }
+    }
+    .navbar-toggler{
+        background-color: $menu-resaltador;
+    
+      
+    }
+    
+
+     }
+     
+    

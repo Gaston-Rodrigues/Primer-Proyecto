@@ -1,0 +1,360 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+.nav-link {
+  color: white; }
+  .nav-link:hover {
+    color: greenyellow; }
+
+.container-fluid {
+  font-size: 20px; }
+  .container-fluid .navbar-brand {
+    color: black;
+    height: 100px;
+    transition: all 2.5s; }
+    .container-fluid .navbar-brand:hover {
+      transform: scale(0.8, 0.8); }
+  .container-fluid .navbar-toggler {
+    background-color: greenyellow; }
+
+    table {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      border-collapse: collapse;
+      margin-bottom: 50px; }
+    
+    th, td {
+      border: 3px solid greenyellow;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      background-color: black;
+      color: white;
+      font-size: 30px; }
+    
+/*grilla index*/
+#grilla {
+  display: grid;
+  gap: 5px;
+  font-size: 20px;
+  padding-bottom: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 90%;
+  grid-template-areas: "foto1 foto2 foto3 foto4"; }
+  #grilla .item1 {
+    grid-area: foto1;
+    width: 100%;
+    height: 100%; }
+  #grilla .item2 {
+    grid-area: foto2; }
+  #grilla .item3 {
+    grid-area: foto3; }
+  #grilla .item4 {
+    grid-area: foto4; }
+  #grilla div {
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    width: 100%; }
+
+/*grilla footer*/
+#grilla-footer {
+  padding-top: 50px;
+  width: 100%;
+  background-color: black;
+  font-size: 15px; }
+
+.derecha {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 90%;
+  grid-template-areas: "area1 area2 area3"; }
+
+.primero {
+  grid-area: area1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  filter: grayscale(100%); }
+
+.primero img {
+  width: 35%;
+  height: 60px; }
+
+.primero:hover {
+  filter: grayscale(30%); }
+
+.direccion {
+  grid-area: area2;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; }
+
+.redes {
+  grid-area: area3;
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; }
+
+.bi-facebook:hover {
+  color: blue; }
+
+.bi-whatsapp:hover {
+  color: green; }
+
+.bi-instagram:hover {
+  color: #c2167a; }
+
+.bi-envelope:hover {
+  color: red; }
+
+/*grilla padel*/
+#grilla-padel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 90%;
+  grid-template-areas: "blindex1 blindex3 blindex4 blindex5";
+  gap: 5px; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.contamos {
+  font-size: 23px; }
+
+/*grilla futbol*/
+#grilla-futbol {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 90%;
+  grid-template-areas: "foto1 foto2 foto3 foto4"; }
+  #grilla-futbol .img1 {
+    grid-area: foto1; }
+  #grilla-futbol .img2 {
+    grid-area: foto2; }
+  #grilla-futbol .img3 {
+    grid-area: foto3; }
+  #grilla-futbol .img4 {
+    grid-area: foto4; }
+  #grilla-futbol img {
+    height: 100%;
+    width: 100%;
+    background-size: cover; }
+
+@media only screen and (max-width: 600px) {
+  #grilla {
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2"
+ "foto3 foto4"; }
+  .item1 {
+    grid-area: foto1;
+    width: 100%;
+    height: 100%; }
+  .item2 {
+    grid-area: foto2; }
+  .item3 {
+    grid-area: foto3; }
+  .item4 {
+    grid-area: foto4; }
+  .primero {
+    display: none;
+    background-color: black; }
+  .derecha {
+    display: grid;
+    font-size: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90%;
+    grid-template-areas: "footer1 footer2"; }
+  .direccion {
+    grid-area: footer1; }
+  .redes {
+    grid-area: footer2; }
+  /*tablas*/
+  .sepia h1, h2 {
+    font-size: 30px; }
+  .table th, td {
+    font-size: 20px; }
+  #grilla-futbol {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2"
+ "foto3 foto4"; }
+  .img1 {
+    grid-area: foto1; }
+  .img2 {
+    grid-area: foto2; }
+  .img3 {
+    grid-area: foto3; }
+  .img4 {
+    grid-area: foto4; }
+  img {
+    height: 100%;
+    width: 100%;
+    background-size: cover; }
+  #grilla-padel {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2"
+ "foto3 foto4"; }
+  .img1 {
+    grid-area: foto1; }
+  .img2 {
+    grid-area: foto2; }
+  .img3 {
+    grid-area: foto3; }
+  .img4 {
+    grid-area: foto4; }
+  img {
+    height: 100%;
+    width: 100%;
+    background-size: cover; } }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+body {
+  background-color: #292828; }
+
+div {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  width: 100%; }
+
+/*index*/
+.sepia {
+  display: flex;
+  background-image: url(../img/Cancha7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+  background-attachment: scroll;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  font-size: 20px;
+  display: block;
+  filter: grayscale(100%); }
+
+.sepia:hover {
+  filter: grayscale(50%); }
+
+/*contacto*/
+.fondo {
+  background-image: url(../img/sintetico.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e0d0d;
+  filter: grayscale(100%);
+  transition: all 1s; }
+
+.fondo:hover {
+  filter: grayscale(20%); }
+
+.contacto {
+  font-size: 30px;
+  margin-bottom: 90px;
+  color: greenyellow; }
+
+#formulario {
+  padding-top: 100px;
+  padding-left: 10px; }
+
+.form-control {
+  background-color: gray;
+  color: greenyellow; }
+
+button {
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background-color: greenyellow;
+  border: none;
+  font-size: 15px; }
+
+/* Entrenamiento*/
+.entreno {
+  display: flex;
+  background-image: url(../img/entreno.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 300px;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+  transition: all 1s; }
+
+.entreno:hover {
+  filter: grayscale(20%); }
+
+.profes {
+  font-size: 25px;
+  color: white;
+  justify-content: center;
+  align-items: baseline; }
+
+/*Tablas*/
+/* Padel*/
+.padel {
+  display: flex;
+  background-image: url(../img/padel1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 250px;
+  filter: grayscale(100%);
+  transition: all 1s;
+  color: black; }
+
+.padel:hover {
+  filter: grayscale(20%); }
+
+.contamos {
+  font-size: 23px; }
+
+/* Futbol*/
+.futbol {
+  display: flex;
+  background-image: url(../img/football.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 250px;
+  filter: grayscale(100%);
+  transition: all 1s;
+  font-size: 25px;
+  color: black; }
+
+.futbol:hover {
+  filter: grayscale(20%); }
