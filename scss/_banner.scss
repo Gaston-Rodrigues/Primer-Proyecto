@@ -1,0 +1,70 @@
+
+.banner{background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:scroll;
+        color: rgb(251, 252, 249); 
+        display: flex;
+        font-size: 25px;
+        font-weight: 100px;
+}
+.fondo{@extend .banner;
+    background-image: url(../img/sintetico.jpg);
+    min-height: 250px;
+    filter: grayscale(100%);
+    transition: all 1s; 
+    &:hover{ filter: grayscale(20%);
+} 
+}
+
+
+.entreno {
+    @extend .banner;
+    background-image: url(../img/entreno.png);
+    min-height: 250px;
+    background-position:center;
+    filter: grayscale(100%);
+    transition: all 1s;
+    &:hover{ filter: grayscale(20%);}  
+
+}
+ 
+
+.padel{
+    @extend .banner;
+    background-image:url(../img/padel1.jpg);
+    background-position: center;
+    min-height: 250px;
+    filter: grayscale(100%);
+    transition: all 1s;
+  &:hover{ filter: grayscale(20%);
+}
+}
+
+.futbol{
+    @extend .banner;
+    background-image:url(../img/football.jpg);
+    min-height: 250px;
+    justify-content:center;
+    align-items:flex-start;
+    background-position:center;
+    filter: grayscale(100%);
+    transition: all 1s;
+ &:hover{ filter: grayscale(20%); }
+ 
+}
+ 
+
+ 
+.sepia{ 
+    @extend .banner;
+    background-image: url(../img/Cancha7.jpg);
+    height: 600px;
+    filter: grayscale(100%);
+    display: inline-block;
+    color: rgb(14, 13, 13);
+    
+  &:hover{ filter: grayscale(50%);}
+ 
+
+  }
+

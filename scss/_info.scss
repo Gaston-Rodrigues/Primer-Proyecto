@@ -1,0 +1,27 @@
+
+@mixin informacion ($color_letra, $tamanio_letra,$color_fondo) {
+        
+    color: $color_letra;
+    font-size: $tamanio_letra;
+    background-color: $color_fondo;
+    
+}
+
+.contacto{
+ @include informacion(greenyellow, 30px, black);
+
+ margin-bottom: 90px;
+
+}
+.profes{
+    @include informacion(white,25px , black);
+
+    justify-content: center;
+    align-items: baseline;
+
+
+}
+.contamos{
+    @include informacion(white,23px,black);
+  
+}

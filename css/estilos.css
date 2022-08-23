@@ -8,30 +8,30 @@
   font-size: 20px; }
   .container-fluid .navbar-brand {
     color: black;
-    height: 100px;
+    height: 75px;
     transition: all 2.5s; }
     .container-fluid .navbar-brand:hover {
       transform: scale(0.8, 0.8); }
   .container-fluid .navbar-toggler {
     background-color: greenyellow; }
 
-    table {
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      border-collapse: collapse;
-      margin-bottom: 50px; }
-    
-    th, td {
-      border: 3px solid greenyellow;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-      background-color: black;
-      color: white;
-      font-size: 30px; }
-    
+table {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-bottom: 50px; }
+
+th, td {
+  border: 3px solid greenyellow;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: black;
+  color: white;
+  font-size: 30px; }
+
 /*grilla index*/
 #grilla {
   display: grid;
@@ -151,8 +151,7 @@ img {
     gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foto1 foto2"
- "foto3 foto4"; }
+    grid-template-areas: "foto1 foto2" "foto3 foto4"; }
   .item1 {
     grid-area: foto1;
     width: 100%;
@@ -186,8 +185,7 @@ img {
     gap: 5px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foto1 foto2"
- "foto3 foto4"; }
+    grid-template-areas: "foto1 foto2" "foto3 foto4"; }
   .img1 {
     grid-area: foto1; }
   .img2 {
@@ -205,8 +203,7 @@ img {
     gap: 5px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foto1 foto2"
- "foto3 foto4"; }
+    grid-template-areas: "foto1 foto2" "foto3 foto4"; }
   .img1 {
     grid-area: foto1; }
   .img2 {
@@ -219,6 +216,97 @@ img {
     height: 100%;
     width: 100%;
     background-size: cover; } }
+
+.banner, .fondo, .entreno, .padel, .futbol, .sepia {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  color: #fbfcf9;
+  display: flex;
+  font-size: 25px;
+  font-weight: 100px; }
+
+.fondo {
+  background-image: url(../img/sintetico.jpg);
+  min-height: 250px;
+  filter: grayscale(100%);
+  transition: all 1s; }
+  .fondo:hover {
+    filter: grayscale(20%); }
+
+.entreno {
+  background-image: url(../img/entreno.png);
+  min-height: 250px;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: all 1s; }
+  .entreno:hover {
+    filter: grayscale(20%); }
+
+.padel {
+  background-image: url(../img/padel1.jpg);
+  background-position: center;
+  min-height: 250px;
+  filter: grayscale(100%);
+  transition: all 1s; }
+  .padel:hover {
+    filter: grayscale(20%); }
+
+.futbol {
+  background-image: url(../img/football.jpg);
+  min-height: 250px;
+  justify-content: center;
+  align-items: flex-start;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: all 1s; }
+  .futbol:hover {
+    filter: grayscale(20%); }
+
+.sepia {
+  background-image: url(../img/Cancha7.jpg);
+  height: 600px;
+  filter: grayscale(100%);
+  display: inline-block;
+  color: #0e0d0d; }
+  .sepia:hover {
+    filter: grayscale(50%); }
+
+.contacto {
+  color: greenyellow;
+  font-size: 30px;
+  background-color: black;
+  margin-bottom: 90px; }
+
+.profes {
+  color: white;
+  font-size: 25px;
+  background-color: black;
+  justify-content: center;
+  align-items: baseline; }
+
+.contamos {
+  color: white;
+  font-size: 23px;
+  background-color: black; }
+
+button {
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background-color: greenyellow;
+  border: none;
+  font-size: 15px; }
+
+#formulario {
+  padding-top: 100px;
+  padding-left: 10px; }
+
+.form-control {
+  background-color: gray;
+  color: greenyellow; }
 
 * {
   box-sizing: border-box;
@@ -235,126 +323,3 @@ div {
   justify-content: center;
   text-align: center;
   width: 100%; }
-
-/*index*/
-.sepia {
-  display: flex;
-  background-image: url(../img/Cancha7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  background-position: center;
-  background-attachment: scroll;
-  color: black;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
-  font-size: 20px;
-  display: block;
-  filter: grayscale(100%); }
-
-.sepia:hover {
-  filter: grayscale(50%); }
-
-/*contacto*/
-.fondo {
-  background-image: url(../img/sintetico.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-  min-height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #0e0d0d;
-  filter: grayscale(100%);
-  transition: all 1s; }
-
-.fondo:hover {
-  filter: grayscale(20%); }
-
-.contacto {
-  font-size: 30px;
-  margin-bottom: 90px;
-  color: greenyellow; }
-
-#formulario {
-  padding-top: 100px;
-  padding-left: 10px; }
-
-.form-control {
-  background-color: gray;
-  color: greenyellow; }
-
-button {
-  width: 100px;
-  height: 35px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 15px;
-  background-color: greenyellow;
-  border: none;
-  font-size: 15px; }
-
-/* Entrenamiento*/
-.entreno {
-  display: flex;
-  background-image: url(../img/entreno.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-  min-height: 300px;
-  color: black;
-  justify-content: center;
-  align-items: center;
-  filter: grayscale(100%);
-  transition: all 1s; }
-
-.entreno:hover {
-  filter: grayscale(20%); }
-
-.profes {
-  font-size: 25px;
-  color: white;
-  justify-content: center;
-  align-items: baseline; }
-
-/*Tablas*/
-/* Padel*/
-.padel {
-  display: flex;
-  background-image: url(../img/padel1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-  min-height: 250px;
-  filter: grayscale(100%);
-  transition: all 1s;
-  color: black; }
-
-.padel:hover {
-  filter: grayscale(20%); }
-
-.contamos {
-  font-size: 23px; }
-
-/* Futbol*/
-.futbol {
-  display: flex;
-  background-image: url(../img/football.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-  min-height: 250px;
-  filter: grayscale(100%);
-  transition: all 1s;
-  font-size: 25px;
-  color: black; }
-
-.futbol:hover {
-  filter: grayscale(20%); }
