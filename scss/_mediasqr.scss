@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {   
 
     #grilla{
         gap: $espacio-grillas;
@@ -179,4 +179,65 @@
     
     }
 }
+    
+ .nav-link{
+        
+        color: $letras-color;
+        margin-left: 35px;
+        &:hover{
+        color:  $menu-resaltador;
+
+      
+     }
+     }
+    
+    .container-fluid{
+        font-size: 20px;
+        
+    .navbar-brand{
+        color: $fondo-color;
+        height: 50px;
+        margin-left: 10px;
+        font-size: 5px;
+   
+
     }
+    .navbar-toggler{
+        background-color: $menu-resaltador;
+        &:focus {
+            outline: none;
+            border-radius: none;
+          }
+    }
+
+}
+
+
+
+     #imagen-form{
+        display: none;
+     }
+
+
+
+
+     .sepia{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:scroll;
+        color: rgb(251, 252, 249); 
+        display: flex;
+        background-image: url(../img/sintetico.jpg);
+        font-size: 25px;
+        font-weight: 100px;
+        background-position: center;
+        min-height: 250px;
+        filter: grayscale(100%);
+        transition: all 1s;
+      &:hover{ filter: grayscale(20%);
+    }}
+    
+      }
+  
+    
+

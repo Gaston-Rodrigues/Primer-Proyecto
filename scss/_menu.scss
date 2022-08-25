@@ -11,23 +11,22 @@
      }
      }
     
-    .container-fluid{
+    .container-fluid{ 
+    
+ 
         font-size: 20px;
-        
+        }
     .navbar-brand{
         color: $fondo-color;
         height: 65px;
-        transition: all 2.5s;
         margin-left: 20px;
-    &:hover{
-       transform:scale(0.8,0.8);
-    
-    }
+
     }
     .navbar-toggler{
         background-color: $menu-resaltador;
-    
+        
+       
     }
-     }
+     
      
     

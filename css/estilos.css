@@ -7,15 +7,14 @@
 
 .container-fluid {
   font-size: 20px; }
-  .container-fluid .navbar-brand {
-    color: black;
-    height: 65px;
-    transition: all 2.5s;
-    margin-left: 20px; }
-    .container-fluid .navbar-brand:hover {
-      transform: scale(0.8, 0.8); }
-  .container-fluid .navbar-toggler {
-    background-color: greenyellow; }
+
+.navbar-brand {
+  color: black;
+  height: 65px;
+  margin-left: 20px; }
+
+.navbar-toggler {
+  background-color: greenyellow; }
 
 table {
   margin-top: 50px;
@@ -247,7 +246,41 @@ img {
     #grilla-padel img {
       height: 100%;
       width: 100%;
-      background-size: cover; } }
+      background-size: cover; }
+  .nav-link {
+    color: white;
+    margin-left: 35px; }
+    .nav-link:hover {
+      color: greenyellow; }
+  .container-fluid {
+    font-size: 20px; }
+    .container-fluid .navbar-brand {
+      color: black;
+      height: 50px;
+      margin-left: 10px;
+      font-size: 5px; }
+    .container-fluid .navbar-toggler {
+      background-color: greenyellow; }
+      .container-fluid .navbar-toggler:focus {
+        outline: none;
+        border-radius: none; }
+  #imagen-form {
+    display: none; }
+  .sepia {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: #fbfcf9;
+    display: flex;
+    background-image: url(../img/sintetico.jpg);
+    font-size: 25px;
+    font-weight: 100px;
+    background-position: center;
+    min-height: 250px;
+    filter: grayscale(100%);
+    transition: all 1s; }
+    .sepia:hover {
+      filter: grayscale(20%); } }
 
 .banner, .fondo, .entreno, .padel, .futbol, .sepia {
   background-repeat: no-repeat;
