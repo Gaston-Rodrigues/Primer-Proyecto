@@ -3,11 +3,11 @@
     .nav-link{
         
         color: $letras-color;
-         
+        margin-left: 35px;
         &:hover{
         color:  $menu-resaltador;
 
-  
+      
      }
      }
     
@@ -18,8 +18,9 @@
         
     .navbar-brand{
         color: $fondo-color;
-        height: 75px;
+        height: 65px;
         transition: all 2.5s;
+        margin-left: 20px;
     &:hover{
        transform:scale(0.8,0.8);
     

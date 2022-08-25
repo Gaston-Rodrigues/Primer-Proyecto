@@ -51,7 +51,7 @@ div {
     grid-template-areas: 
     "area1 area2 area3";
 
-}
+
 
 .primero{
     grid-area: area1;
@@ -107,7 +107,7 @@ div {
 .bi-envelope:hover{
     color: red;
 }
-
+}
 /*grilla padel*/
 #grilla-padel{
     display: grid;
@@ -133,7 +133,7 @@ img{
     grid-template-rows: 90% ;
     grid-template-areas:  "foto1 foto2 foto3 foto4";
     
-
+}
 .img1{
     grid-area: foto1;
 }
@@ -151,4 +151,4 @@ img{
     height: 100%;
     width: 100%;
     background-size: cover;
-}}
+}
