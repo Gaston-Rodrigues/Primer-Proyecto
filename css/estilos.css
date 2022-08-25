@@ -159,19 +159,41 @@ img {
       grid-area: foto3; }
     #grilla .item4 {
       grid-area: foto4; }
-  .primero {
-    display: none;
-    background-color: black; }
+  #grilla-footer {
+    padding-top: 50px;
+    width: 100%;
+    background-color: black;
+    font-size: 15px; }
   .derecha {
     display: grid;
-    font-size: 15px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 90%;
-    grid-template-areas: "footer1 footer2"; }
+    grid-template-areas: "area2 area3"; }
+    .derecha .primero {
+      display: none;
+      justify-content: center;
+      align-content: center;
+      filter: grayscale(100%); }
     .derecha .direccion {
-      grid-area: footer1; }
+      grid-area: area2;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; }
     .derecha .redes {
-      grid-area: footer2; }
+      grid-area: area3;
+      display: inline-block;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; }
+    .derecha .bi-facebook:hover {
+      color: blue; }
+    .derecha .bi-whatsapp:hover {
+      color: green; }
+    .derecha .bi-instagram:hover {
+      color: #c2167a; }
+    .derecha .bi-envelope:hover {
+      color: red; }
   /*tablas*/
   .sepia h1, h2 {
     font-size: 20px; }
